@@ -9,8 +9,8 @@ const FACTS = [
 
 export default function About() {
   return (
-    <section id="about" className="border-t border-ink/10 px-6 md:px-10 py-20 md:py-28">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-12 gap-10 md:gap-16">
+    <section id="about" className="px-8 md:px-10 py-20 md:py-18">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-12 gap-10 md:gap-12">
         <div className="md:col-span-5">
           <span className="font-mono text-xs uppercase tracking-widest text-indigo">About</span>
           <h2 className="font-display font-extrabold text-4xl md:text-5xl leading-tight mt-3">
@@ -22,7 +22,8 @@ export default function About() {
 
         <div className="md:col-span-7 space-y-6 text-ink/75 leading-relaxed">
           <p>
-            I'm currently a BS Information Technology student, working toward graduation in
+            I'm <strong className="text-ink">Niña Issabela S. Olasiman</strong>, currently a
+            4th year BS Information Technology student, working toward graduation in
             May 2027. Most of my time goes into leading{' '}
             <strong className="text-ink">Team Coreline</strong>, our capstone project — a
             role-based information system for the College of Education, built with
