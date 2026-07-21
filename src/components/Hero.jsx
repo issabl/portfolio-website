@@ -13,14 +13,14 @@ export default function Hero() {
           <span className="relative inline-block">
             Design.
             <span className="hidden md:block absolute -right-8 top-2 rotate-[-6deg] bg-indigo text-cream font-mono text-sm normal-case tracking-normal font-medium px-4 py-1.5 rounded-full whitespace-nowrap">
-              Figma &amp; UI systems
+              User Interfaces &amp; Experiences
             </span>
           </span>
           <br />
           <span className="relative inline-block">
-            Build.
+            Develop.
             <span className="hidden md:block absolute left-[15rem] -top-1 rotate-[4deg] bg-ink text-cream font-mono text-sm normal-case tracking-normal font-medium px-4 py-1.5 rounded-full whitespace-nowrap">
-              React · TypeScript · Node
+              React · TypeScript · Node.js
             </span>
           </span>
           <br />
@@ -32,14 +32,17 @@ export default function Hero() {
           </span>
           <br />
           <span className="relative inline-block text-ink/15">
-            Repeat.
+            Innovate.
           </span>
         </h1>
 
         <div className="mt-10 md:mt-14 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <p className="max-w-md text-ink/70 leading-relaxed">
-            I'm Niña Issabela Olasiman — a front-end developer, UI designer, and capstone
-            team leader from Cebu, turning ideas into interfaces people actually enjoy using.
+            I'm Niña Issabela Olasiman, a Bachelor of Information Technology student, Front-End
+            Developer, and Capstone Team Leader from Cebu, Philippines. I specialize in building
+            responsive web applications, crafting intuitive user interfaces, and leading
+            collaborative software development projects. My goal is to create digital solutions
+            that are functional, accessible, and designed with users in mind.
           </p>
 
           <div className="flex flex-wrap gap-3">

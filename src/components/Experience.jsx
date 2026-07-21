@@ -34,12 +34,20 @@ const TIMELINE = [
     desc: 'Served as photojournalist for four years, documenting school events, features, and campus life for the official senior high school publication.',
     tag: 'Photography',
   },
+  {
+    period: 'May 16 – Jun 10, 2024',
+    title: 'Creative Web Design NC III',
+    org: 'TESDA',
+    desc: 'Completed a 102-hour training program in Creative Web Design, covering front-end fundamentals and web layout design principles.',
+    tag: 'Certification',
+  },
 ]
 
 const TAG_STYLES = {
   Development: 'bg-indigo/15 text-indigo',
   Leadership: 'bg-coral/15 text-coral',
   Photography: 'bg-lime/20 text-lime-700',
+  Certification: 'bg-ink/10 text-ink/80',
 }
 
 export default function Experience() {
