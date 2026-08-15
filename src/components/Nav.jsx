@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
 const LINKS = [
-  { href: '#work', label: 'Work' },
   { href: '#about', label: 'About' },
+  { href: '#work', label: 'Work' },
   { href: '#skills', label: 'Skills' },
   { href: '#experience', label: 'Experience' },
   { href: '#gallery', label: 'Gallery' },
