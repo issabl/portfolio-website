@@ -1,22 +1,19 @@
 const SKILLS = [
-  { name: 'HTML', level: 95, color: '#E44D26', icon: 'html' },
-  { name: 'React.js', level: 85, color: '#61DAFB', icon: 'react' },
-  { name: 'Node.js', level: 80, color: '#3C873A', icon: 'node' },
-  { name: 'CSS', level: 90, color: '#264DE4', icon: 'css' },
-  { name: 'Next.js', level: 80, color: '#FFFFFF', icon: 'next' },
-  { name: 'Tailwind CSS', level: 90, color: '#38BDF8', icon: 'tailwind' },
-  { name: 'JavaScript', level: 90, color: '#F0DB4F', icon: 'js' },
-  { name: 'TypeScript', level: 85, color: '#3178C6', icon: 'ts' },
-  { name: 'Git', level: 85, color: '#F1502F', icon: 'git' },
+  { name: 'HTML', level: 70, color: '#E44D26', icon: 'html' },
+  { name: 'React.js', level: 70, color: '#61DAFB', icon: 'react' },
+  { name: 'Node.js', level: 60, color: '#3C873A', icon: 'node' },
+  { name: 'CSS', level: 80, color: '#264DE4', icon: 'css' },
+  { name: 'Next.js', level: 60, color: '#FFFFFF', icon: 'next' },
+  { name: 'Tailwind CSS', level: 80, color: '#38BDF8', icon: 'tailwind' },
+  { name: 'JavaScript', level: 70, color: '#F0DB4F', icon: 'js' },
+  { name: 'TypeScript', level: 70, color: '#3178C6', icon: 'ts' },
+  { name: 'Git', level: 80, color: '#F1502F', icon: 'git' },
 ]
 
 const SOFTWARE = [
-  { name: 'Figma', level: 90, color: '#F24E1E', icon: 'figma' },
-  { name: 'Excel', level: 80, color: '#217346', icon: 'excel' },
-  { name: 'Canva', level: 90, color: '#00C4CC', icon: 'canva' },
-  { name: 'Lightroom', level: 90, color: '#31A8FF', icon: 'lightroom' },
-  { name: 'PowerPoint', level: 80, color: '#D24726', icon: 'powerpoint' },
-  { name: 'Word', level: 80, color: '#2B579A', icon: 'word' },
+  { name: 'Figma', level: 60, color: '#F24E1E', icon: 'figma' },
+  { name: 'Canva', level: 75, color: '#00C4CC', icon: 'canva' },
+  { name: 'Lightroom', level: 75, color: '#31A8FF', icon: 'lightroom' },,
 ]
 
 function Icon({ type, color }) {
