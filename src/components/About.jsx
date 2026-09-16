@@ -30,7 +30,7 @@ export default function About() {
             React, TypeScript, Tailwind, and Supabase.
           </p>
           <p>
-            Outside of code, I shoot and edit photos and video, design event materials for
+            Outside of code, I shoot and edit photos, design event materials for
             campus organizations, and mentor youth through Youth for Christ. I like projects
             where design, technology, and people intersect — and I try to bring the same
             attention to detail to a pixel-perfect UI as I do to a poster or a photo edit.
