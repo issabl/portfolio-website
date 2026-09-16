@@ -13,7 +13,8 @@ const SKILLS = [
 const SOFTWARE = [
   { name: 'Figma', level: 60, color: '#F24E1E', icon: 'figma' },
   { name: 'Canva', level: 75, color: '#00C4CC', icon: 'canva' },
-  { name: 'Lightroom', level: 75, color: '#31A8FF', icon: 'lightroom' },,
+  { name: 'Lightroom', level: 75, color: '#31A8FF', icon: 'lightroom' },
+  { name: 'Photoshop', level: 70, color: '#31A8FF', icon: 'photoshop' },
 ]
 
 function Icon({ type, color }) {
@@ -112,6 +113,12 @@ function Icon({ type, color }) {
           <span className="font-display font-black text-sm">Lr</span>
         </span>
       )
+    case 'photoshop':
+      return (
+        <span className={base} style={{ backgroundColor: '#001E36', color: color }}>
+          <span className="font-display font-black text-sm">Ps</span>
+        </span>
+      )
     case 'excel':
       return (
         <span className={base} style={{ backgroundColor: color, color: '#fff' }}>
@@ -139,21 +146,7 @@ function SkillBar({ skill }) {
   return (
     <div className="flex items-center gap-3 mb-6">
       <Icon type={skill.icon} color={skill.color} />
-      <div className="flex-1 min-w-0">
-        <div className="flex items-center justify-between mb-1.5">
-          <span className="text-cream font-semibold text-sm">{skill.name}</span>
-          <span className="text-cream/60 font-mono text-xs">{skill.level}%</span>
-        </div>
-        <div className="h-1.5 w-full rounded-full bg-cream/10 overflow-hidden">
-          <div
-            className="h-full rounded-full"
-            style={{
-              width: `${skill.level}%`,
-              background: 'linear-gradient(90deg, var(--color-indigo), #A78BFA)',
-            }}
-          />
-        </div>
-      </div>
+      <span className="text-cream font-semibold text-sm">{skill.name}</span>
     </div>
   )
 }
