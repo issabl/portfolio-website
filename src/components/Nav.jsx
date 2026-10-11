@@ -5,6 +5,7 @@ const LINKS = [
   { href: '#work', label: 'Work' },
   { href: '#skills', label: 'Skills' },
   { href: '#experience', label: 'Experience' },
+  { href: '#certifications', label: 'Certifications' },
   { href: '#gallery', label: 'Gallery' },
   { href: '#contact', label: 'Contact' },
 ]
@@ -22,17 +23,23 @@ export default function Nav() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-ink/10 bg-cream/85 backdrop-blur-sm">
-      <div className="max-w-6xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
-        <a href="#top" className="font-display font-extrabold text-lg tracking-tight">
+      <div className="w-full max-w-[1600px] mx-auto px-6 md:px-10 lg:px-14 h-16 flex items-center justify-between gap-6">
+        {/* Left: logo */}
+        <a href="#top" className="font-display font-extrabold text-lg tracking-tight shrink-0 lg:w-48">
           niña<span className="text-indigo">.</span>issabela
         </a>
 
-        <nav className="hidden md:flex items-center gap-8 font-mono text-[13px] uppercase tracking-wide">
+        {/* Center: links */}
+        <nav className="hidden lg:flex flex-1 items-center justify-center gap-8 xl:gap-10 font-mono text-[13px] uppercase tracking-wide">
           {LINKS.map((l) => (
             <a key={l.href} href={l.href} className="text-ink/70 hover:text-ink transition-colors">
               {l.label}
             </a>
           ))}
+        </nav>
+
+        {/* Right: GitHub + CTA */}
+        <div className="hidden lg:flex items-center justify-end gap-5 shrink-0 lg:w-48">
           <a
             href="https://github.com/issabl"
             target="_blank"
@@ -44,14 +51,15 @@ export default function Nav() {
           </a>
           <a
             href="#contact"
-            className="bg-ink text-cream px-4 py-2 rounded-full hover:bg-indigo transition-colors"
+            className="bg-ink text-cream font-mono text-[13px] uppercase tracking-wide px-4 py-2 rounded-full hover:bg-indigo transition-colors whitespace-nowrap"
           >
             Let's talk
           </a>
-        </nav>
+        </div>
 
+        {/* Mobile / tablet menu button */}
         <button
-          className="md:hidden font-mono text-xs uppercase tracking-wide border border-ink/20 rounded-full px-3 py-1.5"
+          className="lg:hidden font-mono text-xs uppercase tracking-wide border border-ink/20 rounded-full px-3 py-1.5"
           onClick={() => setOpen((o) => !o)}
           aria-expanded={open}
           aria-label="Toggle menu"
@@ -61,7 +69,7 @@ export default function Nav() {
       </div>
 
       {open && (
-        <nav className="md:hidden flex flex-col border-t border-ink/10 bg-cream px-6 py-4 gap-4 font-mono text-sm uppercase tracking-wide">
+        <nav className="lg:hidden flex flex-col border-t border-ink/10 bg-cream px-6 md:px-10 py-4 gap-4 font-mono text-sm uppercase tracking-wide">
           {LINKS.map((l) => (
             <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-ink/80">
               {l.label}
@@ -74,6 +82,13 @@ export default function Nav() {
             className="text-ink/80"
           >
             GitHub
+          </a>
+          <a
+            href="#contact"
+            onClick={() => setOpen(false)}
+            className="self-start bg-ink text-cream px-4 py-2 rounded-full"
+          >
+            Let's talk
           </a>
         </nav>
       )}

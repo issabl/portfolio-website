@@ -21,11 +21,11 @@ const TIMELINE = [
     tag: 'Development',
   },
   {
-    period: 'May 16 – Jun 10, 2024',
-    title: 'Creative Web Design NC III',
-    org: 'TESDA',
-    desc: 'Completed a 102-hour training program in Creative Web Design, covering front-end fundamentals and web layout design principles.',
-    tag: 'Certification',
+    period: '2022 – 2023',
+    title: 'Photojournalist',
+    org: 'The Technologian Student Press — Cebu Institute of Technology',
+    desc: 'Served as photojournalist for the official student publication of Cebu Institute of Technology, documenting campus events, features, and school life through photography.',
+    tag: 'Photography',
   },
   {
     period: '2022 Season',
@@ -47,7 +47,6 @@ const TAG_STYLES = {
   Development: 'bg-indigo/15 text-indigo border-indigo/30',
   Leadership: 'bg-coral/15 text-coral border-coral/30',
   Photography: 'bg-lime/20 text-lime-700 border-lime-700/30',
-  Certification: 'bg-ink/10 text-ink/80 border-ink/20',
 }
 
 export default function Experience() {
