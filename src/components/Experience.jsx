@@ -14,6 +14,13 @@ const TIMELINE = [
     tag: 'Leadership',
   },
   {
+    period: 'S.Y. 2025 – 2026',
+    title: 'Graphics Design Head',
+    org: 'Parsers — BSIT Department Organization',
+    desc: 'Led the graphics design team of the BSIT department organization, overseeing the visual identity of its events and campaigns, from posters and program layouts to social media materials.',
+    tag: 'Design',
+  },
+  {
     period: 'Jun 2025 – Nov 2025',
     title: 'Front-End Developer',
     org: 'VIRNO IT Consultancy',
@@ -47,6 +54,7 @@ const TAG_STYLES = {
   Development: 'bg-indigo/15 text-indigo border-indigo/30',
   Leadership: 'bg-coral/15 text-coral border-coral/30',
   Photography: 'bg-lime/20 text-lime-700 border-lime-700/30',
+  Design: 'bg-ink/10 text-ink border-ink/30',
 }
 
 export default function Experience() {
