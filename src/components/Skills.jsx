@@ -15,6 +15,8 @@ const SOFTWARE = [
   { name: 'Canva', level: 75, color: '#00C4CC', icon: 'canva' },
   { name: 'Lightroom', level: 75, color: '#31A8FF', icon: 'lightroom' },
   { name: 'Photoshop', level: 70, color: '#31A8FF', icon: 'photoshop' },
+  { name: 'Wondershare Filmora', level: 70, color: '#00D1B2', icon: 'filmora' },
+  { name: 'CapCut', level: 75, color: '#FFFFFF', icon: 'capcut' },
 ]
 
 function Icon({ type, color }) {
@@ -117,6 +119,22 @@ function Icon({ type, color }) {
       return (
         <span className={base} style={{ backgroundColor: '#001E36', color: color }}>
           <span className="font-display font-black text-sm">Ps</span>
+        </span>
+      )
+    case 'filmora':
+      return (
+        <span className={base} style={{ backgroundColor: '#0B1F2A', color: color }}>
+          <span className="font-display font-black text-sm">Fm</span>
+        </span>
+      )
+    case 'capcut':
+      return (
+        <span className={base} style={{ backgroundColor: '#000' }}>
+          <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="6" cy="7" r="2.5"/>
+            <circle cx="6" cy="17" r="2.5"/>
+            <path d="M8 8.5L20 17M8 15.5L20 7"/>
+          </svg>
         </span>
       )
     case 'excel':
